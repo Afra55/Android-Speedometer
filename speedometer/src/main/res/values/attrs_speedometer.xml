@@ -1,0 +1,36 @@
+<resources>
+    <declare-styleable name="SpeedometerDialog">
+        <attr name="exampleString" format="string" />
+        <attr name="meterNumberFontAssetPath" format="string" />
+        <attr name="meterCenterFontAssetPath" format="string" />
+        <attr name="meterCenterDesc" format="string" />
+        <attr name="meterNumberTextSize" format="dimension" />
+        <attr name="meterCenterNumberTextSize" format="dimension" />
+        <attr name="meterCenterDescTextSize" format="dimension" />
+        <attr name="meterNumberMargin" format="dimension" />
+        <attr name="meterNumberTextColor" format="color" />
+        <attr name="meterNumberSelectedTextColor" format="color" />
+        <attr name="meterNumberLimitTextColor" format="color" />
+        <attr name="meterDividerAreaNumber" format="integer" />
+        <attr name="meterType" format="integer" />
+        <attr name="meterBottomEmptyAngle" format="integer" />
+        <attr name="meterRotateX" format="float" />
+        <attr name="meterTranslateZ" format="dimension" />
+        <attr name="meterTranslateY" format="dimension" />
+        <attr name="meterCenterTextColor" format="color" />
+        <attr name="meterCenterDescTextColor" format="color" />
+        <attr name="meterBg" format="color|reference" />
+        <attr name="meterMaskBg" format="color|reference" />
+        <attr name="meterCenterIc" format="color|reference" />
+        <attr name="meterPointer" format="reference" />
+        <attr name="meterHideCenterNumber" format="boolean" />
+        <attr name="meterHideDividerNumber" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ViewPager2Indicator">
+
+        <attr name="indicatorSelectedWidth" format="dimension" />
+        <attr name="indicatorMargin" format="dimension" />
+        <attr name="indicatorColor" format="color" />
+    </declare-styleable>
+</resources>

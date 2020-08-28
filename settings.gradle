@@ -1,2 +1,3 @@
+include ':speedometer'
 include ':app'
 rootProject.name = "Speedometer"
