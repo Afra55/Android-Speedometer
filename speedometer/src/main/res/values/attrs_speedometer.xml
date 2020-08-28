@@ -1,6 +1,5 @@
 <resources>
     <declare-styleable name="SpeedometerDialog">
-        <attr name="exampleString" format="string" />
         <attr name="meterNumberFontAssetPath" format="string" />
         <attr name="meterCenterFontAssetPath" format="string" />
         <attr name="meterCenterDesc" format="string" />
