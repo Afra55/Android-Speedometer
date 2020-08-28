@@ -1,9 +1,11 @@
 
+![speedometer_2](https://raw.githubusercontent.com/Afra55/Speedometer/master/speedometer_banner.jpeg)
+
 [![license](https://raw.githubusercontent.com/Afra55/Speedometer/master/license.svg)](https://github.com/Afra55/Speedometer/blob/master/LICENSE)
 
 
-# Speedometer
-Custom Speedometer Dialog
+## Speedometer
+速度表盘 For Android
 
 ## 参数说明
 
@@ -35,10 +37,53 @@ Custom Speedometer Dialog
 | meterHideDividerNumber  | 是否隐藏刻度数字　   |
 
 ## 效果展示
-[![视频展示](https://github.com/Afra55/Speedometer/tree/master/video)](https://github.com/Afra55/Speedometer/tree/master/video)
+[视频展示](https://github.com/Afra55/Speedometer/tree/master/video)
 
+### 表盘 1
 
+![speedometer_1](https://raw.githubusercontent.com/Afra55/Speedometer/master/gif/speedometer_1.gif)
+![dialog_bg_1.png](app/src/main/res/drawable-xxhdpi/dialog_bg_1.png)
+![dialog_center_icon_1.png](app/src/main/res/drawable-xxhdpi/dialog_center_icon_1.png)
+![dialog_mask_bg_1.png](app/src/main/res/drawable-xxhdpi/dialog_mask_bg_1.png)
+![dialog_pointer_1.png](app/src/main/res/drawable-xxhdpi/dialog_pointer_1.png)
 
+```
+  <com.afra55.speedometer.SpeedometerDialog
+        android:id="@+id/test_speedometer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:meterBg="@drawable/dialog_bg_1"
+        app:meterCenterDesc="km/h"
+        app:meterCenterIc="@drawable/dialog_center_icon_1"
+        app:meterDividerAreaNumber="8"
+        app:meterMaskBg="@drawable/dialog_mask_bg_1"
+        app:meterNumberLimitTextColor="#E30808"
+        app:meterNumberMargin="89dp"
+        app:meterNumberSelectedTextColor="#FFFFFF"
+        app:meterCenterNumberTextSize="18sp"
+        app:meterCenterDescTextSize="18sp"
+        app:meterCenterTextColor="#FFFFFF"
+        app:meterCenterDescTextColor="#FFFFFF"
+        app:meterNumberTextColor="#4DFFFFFF"
+        app:meterNumberTextSize="20sp"
+        app:meterPointer="@drawable/dialog_pointer_1"
+        />
+
+```
+### 表盘 2
+
+![speedometer_2](https://raw.githubusercontent.com/Afra55/Speedometer/master/gif/speedometer_2.gif)
+
+### 表盘 3
+
+![speedometer_3](https://raw.githubusercontent.com/Afra55/Speedometer/master/gif/speedometer_3.gif)
+
+### 表盘 4
+
+![speedometer_4](https://raw.githubusercontent.com/Afra55/Speedometer/master/gif/speedometer_4.gif)
+
+## license
+Speedometer is available under the Apache-2.0 license. See the LICENSE file for more info.
 ```
    Copyright 2020 Afra55
 

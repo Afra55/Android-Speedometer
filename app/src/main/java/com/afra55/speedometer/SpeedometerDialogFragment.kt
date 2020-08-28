@@ -28,7 +28,9 @@ class SpeedometerDialogFragment(val speedometerDialogResId: Int) : Fragment() {
 
     val testHandler:Handler by lazy {
         Handler(Handler.Callback {
-            mySpeedometerDialog?.setCurrentNumber((0..180).random().toFloat())
+            if (isResume) {
+                mySpeedometerDialog?.setCurrentNumber((0..180).random().toFloat())
+            }
             testHandler.sendEmptyMessageDelayed(0, 500)
             false
 
@@ -37,6 +39,7 @@ class SpeedometerDialogFragment(val speedometerDialogResId: Int) : Fragment() {
 
 
     var mySpeedometerDialog: SpeedometerDialog? = null
+    var isResume = false
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val view = LayoutInflater.from(context).inflate(speedometerDialogResId, null, false)
@@ -54,10 +57,12 @@ class SpeedometerDialogFragment(val speedometerDialogResId: Int) : Fragment() {
 
     override fun onResume() {
         super.onResume()
-        if (mySpeedometerDialog == null) {
+        isResume = true
+    }
 
-        }
-
+    override fun onPause() {
+        super.onPause()
+        isResume = false
     }
 
     override fun onDetach() {
