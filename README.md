@@ -34,7 +34,8 @@ Custom Speedometer Dialog
 | meterHideCenterNumber  | 是否隐藏中心数字　   |
 | meterHideDividerNumber  | 是否隐藏刻度数字　   |
 
-
+## 效果展示
+[![视频展示](https://github.com/Afra55/Speedometer/tree/master/video)](https://github.com/Afra55/Speedometer/tree/master/video)
 
 
 
