@@ -26,6 +26,7 @@ class SpeedometerAdapter(activity: FragmentActivity) : FragmentStateAdapter(acti
         val list = mutableListOf<Int>()
         list.add(R.layout.view_speedometer_1)
         list.add(R.layout.view_speedometer_2)
+        list.add(R.layout.view_speedometer_3)
         list
     }
     override fun getItemCount(): Int {

@@ -44,7 +44,7 @@ class SpeedometerDialogFragment(val speedometerDialogResId: Int) : Fragment() {
         if (test_speedometer is SpeedometerDialog) {
             mySpeedometerDialog = test_speedometer
             item_root.addView(view, 0)
-            mySpeedometerDialog!!.setLimitNumber(80)
+            mySpeedometerDialog!!.setLimitNumber(120)
             mySpeedometerDialog!!.setMaxNumber(180F)
 
             testHandler.sendEmptyMessage(0)
