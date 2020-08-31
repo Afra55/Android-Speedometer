@@ -252,6 +252,9 @@ class SpeedometerDialog : View {
     fun setMaxNumber(maxNumber: Float) {
         this.maxNumber = maxNumber
         invalidateTextPaintAndMeasurements()
+        if (translateMaskPoint != null && width > 0 && height > 0) {
+            drawMask(width, height)
+        }
         invalidate()
     }
 
