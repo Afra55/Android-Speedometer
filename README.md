@@ -66,19 +66,6 @@
 
 ![speedometer_1](https://raw.githubusercontent.com/Afra55/Speedometer/master/gif/speedometer_1.gif)
 
-dialog_bg_1.png:
-![dialog_bg_1.png](app/src/main/res/drawable-xxhdpi/dialog_bg_1.png)
-
-dialog_center_icon_1.png:
-![dialog_center_icon_1.png](app/src/main/res/drawable-xxhdpi/dialog_center_icon_1.png)
-
-dialog_mask_bg_1.png:
-![dialog_mask_bg_1.png](app/src/main/res/drawable-xxhdpi/dialog_mask_bg_1.png)
-
-dialog_pointer_1.png:
-![dialog_pointer_1.png](app/src/main/res/drawable-xxhdpi/dialog_pointer_1.png)
-
-
 ### 表盘 2
 
 ![speedometer_2](https://raw.githubusercontent.com/Afra55/Speedometer/master/gif/speedometer_2.gif)
