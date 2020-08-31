@@ -3,6 +3,9 @@
 
 [![license](https://raw.githubusercontent.com/Afra55/Speedometer/master/license.svg)](https://github.com/Afra55/Speedometer/blob/master/LICENSE)
 
+[TOC]
+
+
 
 ## Speedometer
 速度表盘 For Android
@@ -36,8 +39,11 @@
 | meterHideCenterNumber  | 是否隐藏中心数字　   |
 | meterHideDividerNumber  | 是否隐藏刻度数字　   |
 
+## 原理图
+![原理图](https://raw.githubusercontent.com/Afra55/Speedometer/master/schematic_diagram.png)
+
+
 ## 效果展示
-[视频展示](https://github.com/Afra55/Speedometer/tree/master/video)
 
 ### 表盘 1
 ```
@@ -77,6 +83,9 @@
 ### 表盘 4
 
 ![speedometer_4](https://raw.githubusercontent.com/Afra55/Speedometer/master/gif/speedometer_4.gif)
+
+### 表盘 5
+![speedometer_5](https://raw.githubusercontent.com/Afra55/Speedometer/master/gif/speedometer_5.gif)
 
 ## license
 Speedometer is available under the Apache-2.0 license. See the LICENSE file for more info.

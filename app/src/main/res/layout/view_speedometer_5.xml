@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.afra55.speedometer.SpeedometerDialog
+        android:id="@+id/test_speedometer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:meterBg="@drawable/dialog_bg_5"
+        app:meterMaskBg="@drawable/dialog_mask_bg_5"
+        app:meterCenterDesc="km/h"
+        app:meterDividerAreaNumber="8"
+        app:meterNumberLimitTextColor="#E30808"
+        app:meterHideCenterNumber="true"
+        app:meterNumberMargin="89dp"
+        app:meterNumberSelectedTextColor="#FFFFFF"
+        app:meterNumberTextColor="#4DFFFFFF"
+        app:meterNumberTextSize="20sp"
+        app:meterPointer="@drawable/dialog_pointer_5"
+        />
+
+</FrameLayout>
