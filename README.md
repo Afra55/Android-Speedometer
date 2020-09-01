@@ -87,6 +87,24 @@
 ### 表盘 5
 ![speedometer_5](https://raw.githubusercontent.com/Afra55/Speedometer/master/gif/speedometer_5.gif)
 
+## 基础知识
+
+### xfermode
+用来进行图像混合处理。一共有18种混合模式。[官方文档](https://developer.android.com/reference/android/graphics/PorterDuff.Mode)
+```
+ Paint paint = new Paint();
+ // DST 图
+ canvas.drawBitmap(destinationImage, 0, 0, paint);
+
+ PorterDuff.Mode mode = // choose a mode
+ paint.setXfermode(new PorterDuffXfermode(mode));
+
+ // SRC 图
+ canvas.drawBitmap(sourceImage, 0, 0, paint);
+```
+![xfermode](https://raw.githubusercontent.com/Afra55/Speedometer/master/doc/picture/xfermode.png)
+
+
 ## license
 Speedometer is available under the Apache-2.0 license. See the LICENSE file for more info.
 ```
