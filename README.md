@@ -104,6 +104,21 @@
 ```
 ![xfermode](https://raw.githubusercontent.com/Afra55/Speedometer/master/doc/picture/xfermode.png)
 
+### 测量文字大小
+![font_size](https://raw.githubusercontent.com/Afra55/Speedometer/master/doc/picture/font.png)
+获取文字的内容高度，这个高度是文字绘制的最高点到最低点的距离：
+```
+fun TextPaint.getTextBound(str: String): Rect {
+    val rect = Rect()
+    getTextBounds(str, 0, str.length, rect)
+    return rect
+}
+
+fun TextPaint.getCapHeight(): Int {
+    // 获得0-9数字内容的高度
+    return getTextBound("1234567890").height()
+}
+```
 
 ## license
 Speedometer is available under the Apache-2.0 license. See the LICENSE file for more info.
