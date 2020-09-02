@@ -119,6 +119,54 @@ fun TextPaint.getCapHeight(): Int {
     return getTextBound("1234567890").height()
 }
 ```
+### dp2px
+
+```
+fun Resources.dp2Px(dip: Float): Float {
+    return TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dip, this.displayMetrics)
+}
+```
+
+### 正方形 view
+```
+class SquareFrameLayout : FrameLayout {
+
+    constructor(context: Context) : super(context) {
+        init(null, 0)
+    }
+
+    constructor(context: Context, attrs: AttributeSet) : super(context, attrs) {
+        init(attrs, 0)
+    }
+
+    constructor(context: Context, attrs: AttributeSet, defStyle: Int) : super(
+        context,
+        attrs,
+        defStyle
+    ) {
+        init(attrs, defStyle)
+    }
+
+    fun init(attrs: AttributeSet?, defStyle: Int) {
+
+    }
+
+    override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
+        val widthMode = MeasureSpec.getMode(widthMeasureSpec)
+        val heightMode = MeasureSpec.getMode(heightMeasureSpec)
+
+        var width = MeasureSpec.getSize(widthMeasureSpec)
+        
+        if (heightMode == MeasureSpec.AT_MOST || heightMode == MeasureSpec.EXACTLY) {
+            val height = MeasureSpec.getSize(heightMeasureSpec)
+            // 如果高是 match_parent 或者指定了特定值, 则取宽高较小的值为整个view的宽高
+            width = Math.min(width, height)
+        }
+        
+        setMeasuredDimension(width, width)
+    }
+}
+```
 
 ## license
 Speedometer is available under the Apache-2.0 license. See the LICENSE file for more info.
